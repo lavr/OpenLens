@@ -87,11 +87,11 @@ jobs:
           tag_name: v${{ env.LENS_VERSION }}
           files: | 
               lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}*.dmg
-              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}.AppImage
-              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}.deb
-              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}.rpm
+              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}*.AppImage
+              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}*.deb
+              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}*.rpm
               lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}*.zip
-              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}.exe
+              lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}*.exe
               lens/releasefiles/OpenLens-${{ env.LENS_VERSION }}*.sha256
       - name: Latest
         uses: softprops/action-gh-release@v0.1.14
